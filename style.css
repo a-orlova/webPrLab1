@@ -45,6 +45,7 @@ a{
 
 header img{
     width: 60px;
+    cursor: pointer;
 }
 
 header{
@@ -287,4 +288,30 @@ header .totalQuantity{
     
     background-color: #c04a85;
 
+}
+.returnCart h1{
+    border-top: 1px solid #eee;  
+    padding: 20px 0;
+}
+.returnCart .list .item img{
+    width: 57px;         
+    height: 57px;        
+    object-fit: cover;   
+    border-radius: 10px; 
+}
+
+.returnCart .list .item{
+    display: grid;
+    grid-template-columns: 80px 1fr  50px 80px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-shadow: 0 10px 20px #5555;
+    border-radius: 20px;
+}
+.returnCart .list .item .name,
+.returnCart .list .item .returnPrice{
+    font-size: large;
+    font-weight: bold;
 }
