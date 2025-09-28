@@ -17,3 +17,104 @@
   font-weight: 700;
   font-style: normal;
 }
+
+body{
+    font-family: monospace;
+    overflow-x: hidden;
+    font-size: 15px;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    max-width: 90%;
+    transition: transform 1s;
+
+}
+
+header img{
+    width: 60px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .iconCart{
+    position:relative;
+    z-index: 1;
+}
+
+header .totalQuantity{
+    position:absolute;
+    top:0;
+    right: 0;
+    font-size: x-large;
+    background-color: #E05CA2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20px);
+}
+
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.listProduct .item img{
+    width: 100%;
+}
+
+.listProduct .item h2{
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.listProduct .item .price{
+    font-size: x-large;
+}
+
+.listProduct .item{
+    position: relative;
+}
+
+.listProduct .item button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #E05CA2;
+    color: #fff;
+    width: 50%;
+    border: none;
+    padding: 20px 30px;
+    box-shadow: 0 10px 50 px #000;
+    cursor: pointer;
+    border-radius: 15px;
+    transform: translateX(-50%), translateY(100px);  
+    opacity: 0;  
+}
+
+.listProduct .item:hover button{
+    
+    color: #666;
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateX(-50%);
+    
+    
+}
