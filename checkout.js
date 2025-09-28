@@ -79,3 +79,24 @@ function addCartToHTML(){
     if(totalQuantityHTML) totalQuantityHTML.innerText = totalQuantity;
     if(totalPriceHTML) totalPriceHTML.innerText = '$' + totalPrice;
 }
+
+let orderModal = document.getElementById('orderModal');
+let orderOkBtn = document.getElementById('orderOkBtn');
+let placeOrderBtn = document.querySelector('.buttonCheckout'); 
+
+if(placeOrderBtn){
+    placeOrderBtn.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        orderModal.style.display = 'flex';
+    });
+}
+
+if(orderOkBtn){
+    orderOkBtn.addEventListener('click', () => {
+        listCart = [];
+        localStorage.removeItem('listCart');
+
+        orderModal.style.display = 'none';
+        window.location.href = 'index.html';
+    });
+}
