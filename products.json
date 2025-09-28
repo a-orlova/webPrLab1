@@ -1,74 +1,74 @@
 [
     {
         "id":1,
-        "name": "product name 1",
+        "name": "acne studos tshirt",
         "price": 1000,
         "image":"images/1.jpg"
     },
     {
         "id":2,
-        "name": "product name 2",
-        "price": 1000,
+        "name": "miss me jeans",
+        "price": 500,
         "image":"images/2.jpg"
     },
     {
         "id":3,
-        "name": "product name 3",
-        "price": 1000,
+        "name": "vetements longsleeve",
+        "price": 1200,
         "image":"images/3.jpg"
     },
     {
         "id":4,
-        "name": "product name 4",
-        "price": 1000,
+        "name": "isabel marants",
+        "price": 700,
         "image":"images/4.jpg"
     },
     {
         "id":5,
-        "name": "product name 5",
-        "price": 1000,
+        "name": "margiela tabis",
+        "price": 650,
         "image":"images/5.jpg"
     },
     {
         "id":6,
-        "name": "product name 6",
-        "price": 1000,
-        "image":"images/6.jpg"
+        "name": "just uggs",
+        "price": 550,
+        "image":"images/6.png"
     },
     {
         "id":7,
-        "name": "product name 7",
-        "price": 1000,
+        "name": "isabel marant glasses",
+        "price": 980,
         "image":"images/7.jpg"
     },
     {
         "id":8,
-        "name": "product name 8",
-        "price": 1000,
+        "name": "vivienne westwood ring",
+        "price": 1500,
         "image":"images/8.jpg"
     },
     {
         "id":9,
-        "name": "product name 9",
-        "price": 1000,
-        "image":"images/9.jpg"
+        "name": "replica parfume",
+        "price": 300,
+        "image":"images/9.jpeg"
     },
     {
         "id":10,
-        "name": "product name 10",
-        "price": 1000,
+        "name": "miu miu bag",
+        "price": 1200,
         "image":"images/10.jpg"
     },
     {
         "id":11,
-        "name": "product name 11",
+        "name": "diesel bag",
         "price": 1000,
         "image":"images/11.jpg"
     },
     {
         "id":12,
-        "name": "product name 12",
-        "price": 1000,
+        "name": "balenciaga city bag",
+        "price": 2000,
         "image":"images/12.jpg"
     }
 ]

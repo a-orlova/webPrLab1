@@ -38,6 +38,11 @@ a{
 
 }
 
+.container span{
+    color: #E05CA2;
+    font-size: 60px;
+}
+
 header img{
     width: 60px;
 }
@@ -104,7 +109,7 @@ header .totalQuantity{
     padding: 20px 30px;
     box-shadow: 0 10px 50 px #000;
     cursor: pointer;
-    transform: translateX(-50%), translateY(100px);  
+    transform: translateX(-50%) translateY(100px);  
     opacity: 0;  
 }
 
@@ -116,7 +121,7 @@ header .totalQuantity{
     
     transition: 0.5s;
     opacity: 1;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50px);
     
     
 }
@@ -185,12 +190,22 @@ header .totalQuantity{
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
 }
+
+.cart .buttons .close:hover{
+    background-color: #444; 
+}
+
+.cart .buttons .checkout:hover{
+    background-color: #c04a85; 
+}
+
 .cart .buttons div{
     background-color: #666;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: background-color 0.3s; 
 }
 .cart .buttons a{
     color: #fff;
