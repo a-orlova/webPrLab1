@@ -215,3 +215,76 @@ header .totalQuantity{
 
     background-color: #E05CA2;
 }
+
+.checkoutLayout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+}
+.checkoutLayout .right{
+    background-color: #ababab;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+}
+
+.checkoutLayout .list .img{
+    height: 70px;
+}
+
+.checkoutLayout .right .form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+}
+
+.checkoutLayout .form h1,.checkoutLayout .form .group:nth-child(-n+3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.checkoutLayout .form input, 
+.checkoutLayout .form select
+{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border:none;
+    background-color: #fff;
+    color: #E05CA2;
+}
+
+.checkoutLayout .right .return .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.checkoutLayout .right .return .row div:nth-child(2){
+    font-weight: bold;
+    font-size: x-large;
+}
+.buttonCheckout{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #E05CA2;
+    margin-top: 20px;
+    color: #fff;
+    transition: background-color 0.3s; 
+    cursor: pointer;
+
+
+}
+
+.buttonCheckout:hover{
+    
+    background-color: #c04a85;
+
+}
