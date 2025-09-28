@@ -375,3 +375,103 @@ header .totalQuantity{
     border-radius: 8px;
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+
+    .listProduct .item button{
+        top: 40%;
+        left: 40%;
+    }
+
+    .listProduct {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .listProduct .item img {
+        max-width: 80%;       
+        margin: 0 auto;       
+    }
+
+    .listProduct .item h2 {
+        font-size: 1rem;    
+    }
+
+    .listProduct .item .price {
+        font-size: 0.95rem;   
+    }
+
+    .listProduct .item button {
+        padding: 12px 16px;  
+        font-size: 0.9rem;
+    }
+
+    .checkoutLayout {
+        grid-template-columns: 1fr; 
+        justify-items: center;     
+    }
+    .checkoutLayout .returnCart,
+    .checkoutLayout .right {
+        width: 100%;
+        max-width: 600px; 
+    }
+
+    .returnCart {
+        width: 100%;
+        max-width: 800px; 
+    }
+}
+
+@media (max-width: 600px) {
+
+    .listProduct .item button{
+        top: 40%;
+        left: 35%;
+    
+    }
+
+    .listProduct .item img {
+        max-width: 70%;       
+    }
+
+    .listProduct .item h2 {
+        font-size: 0.9rem;
+    }
+
+    .listProduct .item .price {
+        font-size: 0.85rem;
+    }
+
+    .listProduct .item button {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+
+    .listProduct {
+        grid-template-columns: 1fr;
+    }
+
+    .cart {
+    width: 100%;
+    right: -100%; 
+    transition: right 0.3s ease;
+    }
+
+    .checkoutLayout .right {
+        max-width: 90%;   
+        padding: 20px;    
+    }
+
+    .checkoutLayout .form {
+        gap: 12px;        
+    }
+
+    .checkoutLayout .form input,
+    .checkoutLayout .form select {
+        padding: 8px 12px; 
+    }
+
+    .buttonCheckout {
+        height: 36px;      
+        font-size: 14px;
+    }
+}
