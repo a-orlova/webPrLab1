@@ -38,6 +38,13 @@ a{
 
 }
 
+.container a{
+    color: #000;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
 .container span{
     color: #E05CA2;
     font-size: 60px;
