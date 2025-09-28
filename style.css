@@ -120,3 +120,83 @@ header .totalQuantity{
     
     
 }
+
+.cart{
+
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: #999;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    gap: 20px;
+    transition: right 1s;
+}
+
+.cart h2{
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+.cart .listCart .item{
+    display: grid;
+    grid-template-columns: 50px 1fr 70px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cart .listCart img{
+    width: 100%;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart .listCart .item .name{
+    font-weight: bold;
+}
+.cart .listCart .item .quantity{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.cart .listCart .item .quantity span{
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+
+.cart .listCart{
+    padding: 20px;
+    overflow: auto;
+}
+.cart .listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+.cart .buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+.cart .buttons div{
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cart .buttons a{
+    color: #fff;
+}
+
+.cart .buttons .checkout{
+
+    background-color: #E05CA2;
+}
