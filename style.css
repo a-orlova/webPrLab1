@@ -104,14 +104,16 @@ header .totalQuantity{
     padding: 20px 30px;
     box-shadow: 0 10px 50 px #000;
     cursor: pointer;
-    border-radius: 15px;
     transform: translateX(-50%), translateY(100px);  
     opacity: 0;  
 }
 
+.listProduct .item button:hover{
+    background-color: #666;
+}
+
 .listProduct .item:hover button{
     
-    color: #666;
     transition: 0.5s;
     opacity: 1;
     transform: translateX(-50%);
