@@ -61,6 +61,8 @@ header{
     justify-content: space-between;
 }
 header .iconCart{
+    background: none;
+    border: none;
     position:relative;
     z-index: 1;
 }
@@ -199,8 +201,14 @@ header .totalQuantity{
     text-align: center;
 }
 
+.cart .buttons .close{
+
+    border: none;
+    cursor: pointer;
+}
+
 .cart .buttons .close:hover{
-    background-color: #444; 
+    background-color: #c4c4c4; 
 }
 
 .cart .buttons .checkout:hover{
@@ -222,6 +230,11 @@ header .totalQuantity{
 .cart .buttons .checkout{
 
     background-color: #E05CA2;
+}
+
+.cart .buttons .close{
+
+    transition: background-color 0.3s; 
 }
 
 .checkoutLayout{

@@ -8,85 +8,90 @@
 </head>
 <body>
 
-    <div class="container">
-    <div class="checkoutLayout">
-        <div class="returnCart">
-            <a href="/">keep shopping</a>
-            <h1>products in cart</h1>
-            <div class="list">
+    <main class="container">
+        <div class="checkoutLayout">
+            <section class="returnCart">
+                <a href="/">keep shopping</a>
+                <h1>products in cart</h1>
+                <ul class="list">
 
-                <div class="item">
-                    <img src="images/1.jpg">
-                    <div class="info">
-                        <div class="name">product 1</div>
-                        <div class="price">$1000/1 product</div>
+                    <li class="item">
+                        <img src="images/1.jpg">
+                        <div class="info">
+                            <div class="name">product 1</div>
+                            <div class="price">$1000/1 product</div>
+                        </div>
+                        <div class="quantity">5</div>
+                        <div class="returnPrice">$10000</div>
+                    </li>
+                </ul>
+            </section>
+
+            <aside class="right">
+
+                <h1>checkout</h1>
+
+                <form class="form">
+                    <div class="group">
+                        <label for="name">full name</label>
+                        <input type="text" name="name" id="name" placeholder="alena orlova" required>
+                    </div> 
+    
+                    <div class="group">
+                        <label for="phone">phone number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="1(234)5678900" required>
                     </div>
-                    <div class="quantity">5</div>
-                    <div class="returnPrice">$10000</div>
-                </div>
-            </div>
+    
+                    <div class="group">
+                        <label for="address">address</label>
+                        <input type="text" name="address" id="address" placeholder="cool street, 67" required>
+                    </div>
+    
+                    <div class="group">
+                        <label for="country">country</label>
+                        <select name="country" id="country" required>
+                            <option value="">choose..</option>
+                            <option value="Russia">Russia</option>
+                        </select>
+                    </div>
+    
+                    <div class="group">
+                        <label for="city">city</label>
+                        <select name="city" id="city" required>
+                            <option value="">choose..</option>
+                            <option value="Saint-Petersburg">Saint-Petersburg</option>
+                            <option value="Krasnodar">Krasnodar</option>
+                            <option value="Moscow">Moscow</option>
+                            <option value="Sochi">Sochi</option>
+                            <option value="Rostov-on-Don">Rostov-on-Don</option>
+                        </select>
+                    </div>
+
+                </form>
+
+                <div class="return">
+                        <div class="row">
+                            <div>total quantity</div>
+                            <div class="totalQuantity">70</div>
+                        </div>
+                        <div class="row">
+                            <div>total price</div>
+                            <div class="totalPrice">$9000</div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="buttonCheckout">place an order</button>
+
+            </aside>
+
         </div>
+    </main>
 
-        <div class="right">
-
-            <h1>checkout</h1>
-
-            <div class="form">
-                <div class="group">
-                    <label for="name">full name</label>
-                    <input type="text" name="name" id="name" placeholder="alena orlova">
-                </div> 
-    
-                <div class="group">
-                    <label for="phone">phone number</label>
-                    <input type="number" name="phone" id="phone" placeholder="1(234)5678900">
-                </div>
-    
-                <div class="group">
-                    <label for="address">address</label>
-                    <input type="text" name="address" id="address" placeholder="cool street, 67">
-                </div>
-    
-                <div class="group">
-                    <label for="country">country</label>
-                    <select name="country" id="country">
-                        <option value="">choose..</option>
-                        <option value="Russia">Russia</option>
-                    </select>
-                </div>
-    
-                <div class="group">
-                    <label for="city">city</label>
-                    <select name="city" id="city">
-                        <option value="">choose..</option>
-                        <option value="Saint-Petersburg">Saint-Petersburg</option>
-                        <option value="Krasnodar">Krasnodar</option>
-                        <option value="Moscow">Moscow</option>
-                        <option value="Sochi">Sochi</option>
-                        <option value="Rostov-on-Don">Rostov-on-Don</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="return">
-                <div class="row">
-                    <div>total quantity</div>
-                    <div class="totalQuantity">70</div>
-                </div>
-                <div class="row">
-                    <div>total price</div>
-                    <div class="totalPrice">$9000</div>
-                </div>
-            </div>
-            <button class="buttonCheckout">place an order</button>
-            </div>
-    </div>
-
-    <div id="orderModal" class="modal">
-        <div class="modal-content">
-        <p>you have placed an order!</p>
-        <button id="orderOkBtn">ok</button>
-    </div>
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+    <p>you have placed an order!</p>
+    <button type="button" id="orderOkBtn">ok</button>
+</div>
 
 </div>
 
