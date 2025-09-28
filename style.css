@@ -126,7 +126,7 @@ header .totalQuantity{
     color: #fff;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     width: 400px;
     height: 100vh;
     background-color: #999;
